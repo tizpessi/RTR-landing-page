@@ -1,8 +1,8 @@
 // Configuration - Update these with your actual webhook URLs
 const WEBHOOKS = {
-    getAllData: 'https://avai.app.n8n.cloud/webhook/65e9f02b-4be9-49be-b60f-a822bddad2ba',
-    updateAI: 'https://avai.app.n8n.cloud/webhook/688593d4-629b-4102-86aa-925df54b485a',
-    sendReply: 'https://avai.app.n8n.cloud/webhook/8e9d90e5-288f-411e-8b61-fa1e45a17073'
+    getAllData: '/.netlify/functions/get-all-data',
+    updateAI: '/.netlify/functions/update-ai',
+    sendReply: '/.netlify/functions/send-reply'
 };
 
 // State management
