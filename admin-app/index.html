@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTR Text Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://avai.app.n8n.cloud; img-src 'self' data: https:;">
+</head>
+<body>
+    <!-- Homepage View -->
+    <div id="homepage" class="view active">
+        <div class="header">
+            <h1>Conversations</h1>
+            <button id="refreshHome" class="btn btn-primary">Refresh</button>
+        </div>
+        <div id="conversationList" class="conversation-list">
+            <!-- Conversations will be populated here -->
+        </div>
+    </div>
+
+    <!-- Conversation View -->
+    <div id="conversationView" class="view">
+        <div class="header">
+            <button id="backButton" class="btn btn-secondary">← Back</button>
+            <h2 id="conversationTitle"></h2>
+            <button id="refreshConversation" class="btn btn-primary">Refresh</button>
+            <label class="ai-checkbox">
+                <input type="checkbox" id="aiReplying" checked>
+                <span>AI replying</span>
+            </label>
+        </div>
+        
+        <div id="messagesContainer" class="messages-container">
+            <!-- Messages will be populated here -->
+        </div>
+        
+        <div class="message-input-container">
+            <input type="text" id="messageInput" placeholder="Type your message..." />
+            <button id="sendButton" class="btn btn-send">Send</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
